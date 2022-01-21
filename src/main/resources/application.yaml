@@ -1,0 +1,29 @@
+server:
+  port: 9898
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-exclude: src/main/java
+  freemarker:
+    cache: false
+
+
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/springboot_demo?useSSL=false
+      username: root
+      password: rubik123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initial-size: 10
+      max-active: 20
+      max-wait: 60000
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: true
+        login-username: admin
+        login-password: admin
+      filters: stat, wall  # 显示 SQL 监控， 防火墙
+
