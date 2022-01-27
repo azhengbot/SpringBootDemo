@@ -1,6 +1,6 @@
-package com.example.springbootdemo.advice;
+package com.example.springboot_demo.advice;
 
-import com.example.springbootdemo.advice.utils.CommonResp;
+import com.example.springboot_demo.advice.utils.CommonResp;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.server.ServerHttpRequest;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 
-@ControllerAdvice(basePackages = "com.example.springbootdemo.controller")
+@ControllerAdvice(basePackages = "com.example.springboot_demo.controller")
 public class ResAdvice implements ResponseBodyAdvice<Object> {
     @Override
     public boolean supports(MethodParameter methodParameter, Class aClass) {

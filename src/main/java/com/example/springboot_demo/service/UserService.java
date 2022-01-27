@@ -1,7 +1,7 @@
-package com.example.springbootdemo.service;
+package com.example.springboot_demo.service;
 
-import com.example.springbootdemo.dao.mapper.UserMapper;
-import com.example.springbootdemo.domain.User;
+import com.example.springboot_demo.mapper.UserMapper;
+import com.example.springboot_demo.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,12 +15,12 @@ public class UserService {
         this.userMapper = userMapper;
     }
 
-
-    public User[] getUsers() {
-        User[] all = userMapper.findAll();
-        return all;
+    public User getUserInstance(long id) {
+        return userMapper.getInstance(id);
     }
 
-    public void insertUser() {
+
+    public User[] getList() {
+        return userMapper.getList();
     }
 }

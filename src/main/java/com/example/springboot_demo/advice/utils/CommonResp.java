@@ -1,4 +1,4 @@
-package com.example.springbootdemo.advice.utils;
+package com.example.springboot_demo.advice.utils;
 
 import lombok.Data;
 

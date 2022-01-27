@@ -26,4 +26,5 @@ spring:
         login-username: admin
         login-password: admin
       filters: stat, wall  # 显示 SQL 监控， 防火墙
-
+mybatis:
+  type-aliases-package: com.example.springboot_demo.domain

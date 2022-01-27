@@ -1,6 +1,6 @@
-package com.example.springbootdemo.dao.mapper;
+package com.example.springboot_demo.mapper;
 
-import com.example.springbootdemo.domain.User;
+import com.example.springboot_demo.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -14,6 +14,8 @@ public interface UserMapper {
     @Insert("INSERT INTO USER(NAME, AGE) VALUES(#{name}, #{age})")
     int insert(@Param("name") String name, @Param("age") Integer age);
 
-    @Select("SELECT id,name,age FROM USER")
-    User[] findAll();
+//    @Select("SELECT id,name,age FROM USER")
+    User[] getList();
+
+    User getInstance(long id);
 }

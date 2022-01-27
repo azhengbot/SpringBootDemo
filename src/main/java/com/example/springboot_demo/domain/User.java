@@ -1,4 +1,4 @@
-package com.example.springbootdemo.domain;
+package com.example.springboot_demo.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
