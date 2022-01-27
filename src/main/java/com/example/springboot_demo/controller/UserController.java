@@ -38,5 +38,9 @@ public class UserController {
         return userService.addInstance(user);
     }
 
+    @PutMapping("/{id}")
+    public User updateUserInstance(@PathVariable long id, @RequestBody User user) {
+        return userService.updateInstance(id, user);
+    }
 
 }

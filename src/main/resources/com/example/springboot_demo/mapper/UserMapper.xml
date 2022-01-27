@@ -19,4 +19,9 @@
             keyProperty="id">
         insert user (name, age) value (#{name}, #{age})
     </insert>
+
+    <update id="updateInstance"
+            parameterType="com.example.springboot_demo.domain.User">
+        update user set name = #{name}, age = #{age} where id = #{id}
+    </update>
 </mapper>

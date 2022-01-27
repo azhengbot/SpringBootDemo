@@ -28,4 +28,10 @@ public class UserService {
         userMapper.addInstance(user);
         return user;
     }
+
+    public User updateInstance(long id, User user) {
+        user.setId(id);
+        userMapper.updateInstance(user);
+        return user;
+    }
 }

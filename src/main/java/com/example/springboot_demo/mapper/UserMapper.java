@@ -20,4 +20,6 @@ public interface UserMapper {
     User getInstance(long id);
 
     void addInstance(User user);
+
+    void updateInstance(User user);
 }
