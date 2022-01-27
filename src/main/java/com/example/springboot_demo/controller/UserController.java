@@ -30,9 +30,13 @@ public class UserController {
 
     @GetMapping("/{id}")
     public User getUserInstance(@PathVariable long id) {
-        return userService.getUserInstance(id);
+        return userService.getInstance(id);
     }
 
+    @PostMapping("")
+    public User addUserInstance(@RequestBody User user) {
+        return userService.addInstance(user);
+    }
 
 
 }

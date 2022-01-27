@@ -12,4 +12,11 @@
         select * from user where id = #{id};
     </select>
 
+<!--    useGeneratedKeys, keyProperty 可以返回插入数据的主键-->
+    <insert id="addInstance"
+            parameterType="com.example.springboot_demo.domain.User"
+            useGeneratedKeys="true"
+            keyProperty="id">
+        insert user (name, age) value (#{name}, #{age})
+    </insert>
 </mapper>

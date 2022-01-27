@@ -15,12 +15,17 @@ public class UserService {
         this.userMapper = userMapper;
     }
 
-    public User getUserInstance(long id) {
+    public User getInstance(long id) {
         return userMapper.getInstance(id);
     }
 
 
     public User[] getList() {
         return userMapper.getList();
+    }
+
+    public User addInstance(User user) {
+        userMapper.addInstance(user);
+        return user;
     }
 }
