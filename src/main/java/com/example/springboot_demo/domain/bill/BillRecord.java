@@ -8,7 +8,7 @@ public class BillRecord {
   private java.sql.Timestamp timeOfOccurrence;
   private long tagId;
   private java.sql.Timestamp createdAt;
-  private java.sql.Timestamp updatedAte;
+  private java.sql.Timestamp updatedAt;
 
 
   public long getId() {
@@ -57,11 +57,11 @@ public class BillRecord {
 
 
   public java.sql.Timestamp getUpdatedAte() {
-    return updatedAte;
+    return updatedAt;
   }
 
   public void setUpdatedAte(java.sql.Timestamp updatedAte) {
-    this.updatedAte = updatedAte;
+    this.updatedAt = updatedAte;
   }
 
 }
